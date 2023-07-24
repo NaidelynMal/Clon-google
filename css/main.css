@@ -1,0 +1,246 @@
+body{
+    /*margen*/
+    margin: 0;
+    /*margen pa dentro*/
+    padding: 0;
+    /*tipografia*/
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/********************************************************************/
+/********************************************************************/
+/********************************************************************/
+/**************Navegación***********************************/
+
+
+header{
+    background-color: blue;
+    width: 100%;
+    height: 50px;
+
+}
+
+header nav{
+    /*Elementos flexibles*/
+    background-color: white;   
+    display: flex;
+    /*Alinear a la derecha*/
+    justify-content: flex-end;
+}
+
+header nav .nav-right-section{
+    background-color: white;
+    width: 250px;
+    /*eliminar viñetas*/
+    list-style: none;
+    /*flexibilidad en nuestro componente*/
+    display: flex;
+    /*centramos horizontalmente los elementos dentro de la lista*/
+    justify-content: center;
+    /*centramos verticalmente en la lista*/
+    align-items: center;
+}
+
+a{
+    /*eliminar linea debajo*/
+    text-decoration: none;
+}
+
+nav .nav-right-section a{
+    /*color de texto*/
+    color: rgb(21,21,21);
+    /*margen derecho*/
+    margin-right: 20px;
+}
+
+nav .nav-right-section .menu{
+    background-image: url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png);
+    width: 20px;
+    /*modifica el tamaño de la imagen al contenedor*/
+    background-size: contain;
+    /*eliminar repetición del elemento*/
+    background-repeat: no-repeat;
+}
+
+nav .nav-right-section img{
+    /*redondear imagen*/
+    border-radius: 100px;
+    /*margen izquierdo para separar menú de imagen*/
+    margin-left: 20px;
+    width: 35px;
+}
+
+/********************************************************************/
+/********************************************************************/
+/********************************************************************/
+/**************Main***********************************/
+
+main{
+    margin-top: 130px;
+    text-align: center;
+}
+/*sección de logo*/
+main .main-logo{
+    width: 530px;
+    /*setea 0 al margen de arriba y abajo-- auto (setea en automatico bordes de izquierda a derecha*/
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+/*logo*/
+main .main-logo img{
+    height: 120px;
+}
+
+/*sección input*/
+main .main-input{
+    width: 550px;
+    margin: 0 auto;
+    /*separación entre buscador y botones*/
+    margin: bottom 40px;;
+}
+
+/*caja con bordes redondeados*/
+
+main .main-input-container{
+    /*borde y pide 3 valores, anchura de línea, estilo y color*/
+   border: 1px solid #dfe1e5;
+   border-radius: 20px;
+   width: 525px;
+
+   /*componentes flexibles y que se muevan*/
+   /*centrado*/
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+/*Cajita de input*/
+main .main-input input{
+    height: 35px;
+    border: none;
+    /*outline es borde cuando seleccionas elemento*/
+    outline: none;
+    width: 430px;
+}
+
+main .main-input .search-icon{
+    background-image: url(https://seekicon.com/free-icon-download/search_20.svg);
+    background-size: contain;
+    padding-left: 6%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 15px;
+    width: 15px;
+}
+main .main-input .micro-icon{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png);
+    height: 17px;
+    width: 17px;
+    background-size: contain;
+    background-position: center;
+    padding-left: 1%;
+    background-repeat: no-repeat;
+}
+
+main .main-input .cam-icon{
+    background-image:url(https://static.wikia.nocookie.net/logopedia/images/2/2b/Google_Lens_2021.svg) ;
+    background-position: center;
+    background-size: contain;
+    width: 17px;
+    height: 17px;
+    background-repeat: no-repeat;
+    padding-right: 5%;
+}
+
+/* BOTONES */
+main .main-buttons{
+    width: 550px;
+    /* vertical - horizontal */
+    margin: 0 auto;
+}
+
+main .main-buttons div{
+    /* inline block: que estén en la misma línea */
+    display: inline-block;
+}
+
+main .main-buttons button{
+    background-color: #f8f9fa;
+    border: none;
+    height: 40px;
+    font-size: 16px;
+    color: #3c4043;
+    padding: 0px 15px;
+    border-radius: 4px; 
+    margin-right: 10px;
+}
+
+
+/* EFECTO DE SOMBRA AL PASAR MOUSE */
+main .main-input-container:hover{
+    /* offset-x | offset-y | blur-radius | color */
+    box-shadow: 0 0 5px #20212447;
+}
+
+main .main-buttons button:hover{
+    color:#202124;
+     /*borde y pide 3 valores, anchura de línea, estilo y color*/
+    border: 1px solid #dadce0;
+    box-shadow: 0 1px 1px #20212447;
+}
+
+footer{
+    background-color: rgb(224, 218, 218);
+    height: 100px;
+    margin:0;
+    padding: 0;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+footer p{
+    align-self: flex-start;
+    color: #56585a;
+    font-size: 15px;
+    padding-top: 5px;
+    position: absolute;
+    left: 25px;
+}
+
+footer .footer-left{
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 70px;
+    margin-right: 50px;
+    position: absolute;
+    left: 10px;
+}
+
+footer a{
+    margin-right: 20px;
+    font-size: 15px;
+    text-decoration: none;
+    color: #56585a;
+}
+
+footer .footer-right{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 50px;
+    position: absolute;
+    right: 25px;
+    margin-top: 70px;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+ 
